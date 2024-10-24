@@ -1,0 +1,36 @@
+/* Custom inline CSS */
+.landing {
+    height: 80vh;
+    background-image: url(../../assets/image/download.jpeg); /* Replace with your image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+}
+
+.landing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #198754c9;
+    z-index: 1; /* Make sure it is behind the text */
+}
+
+.landing-content {
+    position: relative; /* Position relative to enable z-index */
+    z-index: 2; /* Bring the text above the overlay */
+    text-align: center;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
